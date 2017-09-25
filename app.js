@@ -33,10 +33,8 @@ const request = require('request');
 
 const app = express();
 const connector = new builder.ChatConnector({
-    // appId: process.env.MICROSOFT_APP_ID,
-    // appPassword: process.env.MICROSOFT_APP_PASSWORD,
-    appId: "aa20023b-d83d-487f-885a-778cfd0cf5d9",
-    appPassword: "CLoRMQuScumPyaisLet1er2",
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MICROSOFT_APP_PASSWORD,
 });
 //default is port 3978
 app.listen(3978, () => {
