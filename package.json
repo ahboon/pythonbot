@@ -1,0 +1,17 @@
+{
+  "name": "codehour",
+  "version": "1.0.0",
+  "description": "Building my own express server!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cher Boon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "botbuilder": "^3.9.1",
+    "express": "^4.15.4",
+    "nodemon": "^1.12.1"
+  }
+}
