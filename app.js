@@ -37,7 +37,7 @@ const connector = new builder.ChatConnector({
     appPassword: process.env.MICROSOFT_APP_PASSWORD,
 });
 //default is port 3978
-app.listen(443, () => {
+app.listen(3978, () => {
     console.log('Chatbot server started and listening to port 3978');
 });
 app.post('/api/messages', connector.listen());
