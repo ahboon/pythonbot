@@ -14,5 +14,12 @@
     "botbuilder": "^3.9.1",
     "express": "^4.15.4",
     "nodemon": "^1.12.1"
+  },
+
+  "engines": {
+    "node": "6.11.2"
   }
+
+
+
 }
