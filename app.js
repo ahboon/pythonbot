@@ -82,7 +82,7 @@ bot.dialog('greeting', [
         else {
             session.endDialog('Hello %s', session.userData.name)
         }
-    session.endDialog('Hello, I am Boternator');
+    //session.endDialog('Hello, I am Boternator');
     },
     (session, results) => {
         session.userData.name = results.response;
