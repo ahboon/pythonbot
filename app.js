@@ -76,13 +76,13 @@ bot.dialog('/', (session) => {
 
 bot.dialog('greeting', [
     (session) => {
-        // if (!session.userData.name){
-        //     builder.Prompts.text(session, 'Hello, what is your name');
-        // }
-        // else {
-        //     session.endDialog('Hello %s', session.userData.name)
-        // }
-    //session.endDialog('Hello, I am Boternator');
+        if (!session.userData.name){
+            builder.Prompts.text(session, 'Hello, what is your name');
+        }
+        else {
+            session.endDialog('Hello %s', session.userData.name)
+        }
+    session.endDialog('Hello, I am Boternator');
     },
     (session, results) => {
         session.userData.name = results.response;
